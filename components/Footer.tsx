@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-300">
-      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    <footer className="bg-gradient-to-b from-[#fff3e5] via-[#fff7d6] to-[#ffe6d0] text-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-slate-100">
+      <div className="mx-auto max-w-9xl px-6 py-12 sm:px-8 lg:px-12">
+        <div className="grid gap-6 rounded-[2rem] bg-white/90 p-8 shadow-xl shadow-orange-100/50 dark:bg-slate-950/95 dark:shadow-none md:grid-cols-2 xl:grid-cols-4">
           <div className="space-y-4">
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">Snacks Bari</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-snackDeep dark:text-slate-300">Snacks Bari</p>
             <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Online snack shop in Bangladesh</h2>
             <p className="max-w-sm leading-7 text-slate-600 dark:text-slate-400">
               Discover premium snacks, thoughtful combos, and fast delivery across Bangladesh with a polished and modern shopping experience.
@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">Quick Links</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-snackDeep dark:text-slate-300">Quick Links</h3>
             <ul className="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
               <li>
                 <a href="/" className="transition hover:text-slate-900 dark:hover:text-white">Home</a>
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">Customer Support</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-snackDeep dark:text-slate-300">Customer Support</h3>
             <ul className="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
               <li>
                 <a href="/help" className="transition hover:text-slate-900 dark:hover:text-white">Help Center</a>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           <div className="space-y-5">
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">Social Media</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-snackDeep dark:text-slate-300">Social Media</h3>
               <div className="mt-6 flex items-center gap-3">
                 <a href="#" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-900 transition hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
