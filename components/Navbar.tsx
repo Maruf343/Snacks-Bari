@@ -49,7 +49,11 @@ export default function Navbar() {
     const updateCart = () => setCartCount(getCartCount());
     updateCart();
     window.addEventListener('storage', updateCart);
-    return () => window.removeEventListener('storage', updateCart);
+    window.addEventListener('snack-bari-cart-change', updateCart);
+    return () => {
+      window.removeEventListener('storage', updateCart);
+      window.removeEventListener('snack-bari-cart-change', updateCart);
+    };
   }, []);
 
   useEffect(() => {

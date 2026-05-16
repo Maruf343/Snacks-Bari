@@ -1,10 +1,17 @@
+'use client';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import CategoryCard from '@/components/CategoryCard';
+import { addToCart } from '@/lib/cart';
 import { featuredSnacks, categories } from '@/lib/api';
 
 export default function HomePage() {
+  const handleAddToCart = (product: (typeof featuredSnacks)[number]) => {
+    addToCart(product);
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#fff3e5] via-[#fff7d6] to-[#ffe6d0] text-slate-900 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 dark:text-slate-100">
       <Navbar />
@@ -74,7 +81,7 @@ export default function HomePage() {
 
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {featuredSnacks.map((snack) => (
-              <ProductCard key={snack.id} product={snack} />
+              <ProductCard key={snack.id} product={snack} onAddToCart={() => handleAddToCart(snack)} />
             ))}
           </div>
         </div>
